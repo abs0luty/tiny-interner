@@ -1,0 +1,17 @@
+[package]
+name = "lapis"
+version = "0.1.0"
+authors = ["abs0luty"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/abs0luty/lapis"
+documentation = "https://docs.rs/lapis"
+keywords = ["string", "interner", "symbol", "str"]
+categories = ["data-structures"]
+description = """Easy to use string interner with fast access to underlying strings 
+and minimal memory footprint.
+"""
+edition = "2021"
+
+[dependencies]
+hashbrown = "0.13.2"
