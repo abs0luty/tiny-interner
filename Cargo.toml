@@ -1,11 +1,11 @@
 [package]
-name = "lapis"
+name = "ry-interner"
 version = "0.1.0"
 authors = ["abs0luty"]
 license = "MIT"
 readme = "README.md"
-repository = "https://github.com/abs0luty/lapis"
-documentation = "https://docs.rs/lapis"
+repository = "https://github.com/abs0luty/ry-interner"
+documentation = "https://docs.rs/ry-interner"
 keywords = ["string", "interner", "symbol", "str"]
 categories = ["data-structures"]
 description = """Easy to use string interner with fast access to underlying strings 

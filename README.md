@@ -1,5 +1,5 @@
-# Lapis
-288 lines of Rust code that implement string internering.
+# `ry_interner` crate.
+324 lines of Rust code that implement string internering for Ry programming language compiler.
 
 ## Example
 ```rs

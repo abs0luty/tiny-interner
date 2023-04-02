@@ -1,9 +1,45 @@
-#![doc(html_root_url = "https://docs.rs/crate/lapis/0.1.0")]
+#![doc(html_root_url = "https://docs.rs/crate/ry-interner/0.1.0")]
 #![cfg_attr(not(feature = "std"), no_std)]
 #![deny(missing_docs)]
 #![warn(unsafe_op_in_unsafe_fn, clippy::redundant_closure_for_method_calls)]
 
-//! No docs here for a while.
+//! 324 lines of Rust code that implement string internering for
+//! Ry programming language compiler.
+//!
+//! The crate caches strings and associates them with unique symbols.
+//! These allows constant time comparisons and look-ups to underlying interned strings.
+//!
+//! ### Examples:
+//!
+//! Internings:
+//! ```
+//! use ry_interner::Interner;
+//!
+//! let mut interner = Interner::default();
+//! let symbol0 = interner.get_or_intern("A");
+//! let symbol1 = interner.get_or_intern("B");
+//! let symbol2 = interner.get_or_intern("C");
+//! let symbol3 = interner.get_or_intern("A");
+//!
+//! assert_ne!(symbol0, symbol1);
+//! assert_ne!(symbol0, symbol2);
+//! assert_ne!(symbol1, symbol2);
+//! assert_eq!(symbol0, symbol3);
+//! ```
+//!
+//! Resolving symbols:
+//! ```
+//! use ry_interner::Interner;
+//!
+//! let mut interner = Interner::default();
+//! let symbol0 = interner.get_or_intern("A");
+//! let symbol1 = interner.get_or_intern("B");
+//!
+//! assert_eq!(interner.resolve(0), Some("A"));
+//! assert_eq!(interner.resolve(1), Some("B"));
+//! assert_eq!(interner.resolve(2), None);
+//! ```
+
 use core::{
     hash::{BuildHasher, Hash, Hasher},
     marker::PhantomData,
