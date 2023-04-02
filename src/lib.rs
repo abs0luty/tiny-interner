@@ -54,7 +54,7 @@ use hashbrown::{
     HashMap,
 };
 
-/// Data structures that allows to resolve/intern strings.
+/// Data structure that allows to resolve/intern strings.
 ///
 /// See:
 ///  - [`Interner::get_or_intern`] to intern a new string.
