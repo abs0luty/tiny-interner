@@ -1,5 +1,5 @@
 # `ry_interner` crate.
-Extracted 324 lines of Rust code that implement string internering for Ry programming language compiler.
+Extracted 327 lines of Rust code that implement string internering for Ry programming language compiler.
 
 ## Example
 ```rs
