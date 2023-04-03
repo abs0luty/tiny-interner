@@ -3,7 +3,7 @@
 #![deny(missing_docs)]
 #![warn(unsafe_op_in_unsafe_fn, clippy::redundant_closure_for_method_calls)]
 
-//! 324 lines of Rust code that implement string internering for
+//! 327 lines of Rust code that implement string internering for
 //! Ry programming language compiler.
 //!
 //! The crate caches strings and associates them with unique symbols.
@@ -53,6 +53,9 @@ use hashbrown::{
     hash_map::{DefaultHashBuilder, RawEntryMut},
     HashMap,
 };
+
+/// Represents unique symbol corresponding to some interned string.
+pub type Symbol = usize;
 
 /// Data structure that allows to resolve/intern strings.
 ///
