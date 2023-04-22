@@ -13,7 +13,7 @@
 //!
 //! Internings:
 //! ```
-//! use ry_interner::Interner;
+//! use tiny_interner::Interner;
 //!
 //! let mut interner = Interner::default();
 //! let symbol0 = interner.get_or_intern("A");
@@ -29,7 +29,7 @@
 //!
 //! Resolving symbols:
 //! ```
-//! use ry_interner::Interner;
+//! use tiny_interner::Interner;
 //!
 //! let mut interner = Interner::default();
 //! let symbol0 = interner.get_or_intern("A");
