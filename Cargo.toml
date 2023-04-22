@@ -1,11 +1,11 @@
 [package]
-name = "ry-interner"
+name = "tiny-interner"
 version = "0.1.1"
 authors = ["abs0luty"]
 license = "MIT"
 readme = "README.md"
-repository = "https://github.com/abs0luty/ry-interner"
-documentation = "https://docs.rs/ry-interner"
+repository = "https://github.com/abs0luty/tiny-interner"
+documentation = "https://docs.rs/tiny-interner"
 keywords = ["string", "interner", "symbol", "str"]
 categories = ["data-structures"]
 description = """Easy to use string interner with fast access to underlying strings 

@@ -1,4 +1,4 @@
-#![doc(html_root_url = "https://docs.rs/crate/ry-interner/0.1.0")]
+#![doc(html_root_url = "https://docs.rs/crate/tiny-interner/0.1.0")]
 #![cfg_attr(not(feature = "std"), no_std)]
 #![deny(missing_docs)]
 #![warn(unsafe_op_in_unsafe_fn, clippy::redundant_closure_for_method_calls)]
