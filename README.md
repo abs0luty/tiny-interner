@@ -1,4 +1,4 @@
-# `ry_interner` crate.
+# 🪐 `tiny_interner` crate.
 ~300 lines of Rust code that implement string internering for your programming language compiler.
 
 ## Example
