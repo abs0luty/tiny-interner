@@ -3,7 +3,7 @@
 #![deny(missing_docs)]
 #![warn(unsafe_op_in_unsafe_fn, clippy::redundant_closure_for_method_calls)]
 
-//! 327 lines of Rust code that implement string internering for
+//! ~300 lines of Rust code that implement string internering for
 //! Ry programming language compiler.
 //!
 //! The crate caches strings and associates them with unique symbols.
